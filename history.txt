@@ -1,0 +1,151 @@
+    1  sudo apt update
+    2  sudo apt install build-essential
+    3  gcc --version
+    4  ps
+    5  pwd
+    6  cd home
+    7  cd ./home
+    8  cd ./user
+    9  cd home
+   10  pwd
+   11  cd ../
+   12  pwd
+   13  cd ..
+   14  cd ./user
+   15  pwd
+   16  vim test.c
+   17  sudo apt install vim
+   18  vim test.c
+   19  ls
+   20  vim test.c
+   21  ls
+   22  gcc  -g test.c -0 test
+   23  gcc  -g test.c  -o  test
+   24  ls
+   25  ./test
+   26  ls
+   27  vi test.sh
+   28  ls
+   29  chmod 777 test.sh
+   30  ./test
+   31  ./test.sh
+   32  file test.sh
+   33  ls
+   34  madir work
+   35  mkdir work
+   36  ls
+   37  ls -l
+   38  ls
+   39  pwd
+   40  cd ./work
+   41  ls
+   42  cd 1 week
+   43  cd 1week
+   44  cd ./1week
+   45  cd ./1 week
+   46  cd '1 week'
+   47  pwd
+   48  cd work
+   49  pwd
+   50  ls
+   51  cd '1 week'
+   52  ls
+   53  vi test02.c
+   54  ls
+   55  gcc test02.c -o
+   56  gcc test02.c -o -g
+   57  ls
+   58  gcc test02.c -o test02
+   59  ls
+   60  ./ test02
+   61  ./test02
+   62  ls
+   63  vi test02.c
+   64  gcc test02.c -o test02
+   65  ;s
+   66  ls
+   67  ./test02
+   68  strace ./test02
+   69  vi test02.c
+   70  gcc test02.c -o test02
+   71  strace ./test02
+   72  gcc test02.c -o test02
+   73  strace ./test02
+   74  vi test02
+   75  vi test02.c
+   76  gcc test02.c -o test02
+   77  ls
+   78  strace ./test02
+   79  gcc test02.c -o test02
+   80  strace ./test02
+   81  gcc test02.c -o test02
+   82  strace ./test02
+   83  cd wprk
+   84  cd work
+   85  cd '1 week'
+   86  ls
+   87  gcc test02.c -o test02
+   88  strace ./test02
+   89  gcc test02.c -o test02
+   90  strace ./test02
+   91  gcc test02.c -o test02
+   92  strace ./test02
+   93  gcc test02.c -o -g test02
+   94  gcc -g test02.c -o test02
+   95  strace ./test02
+   96  gdb
+   97  gdb test02
+   98  pwd
+   99  cd work
+  100  cd '1 week'
+  101  ..
+  102  ../
+  103  cd ../
+  104  sleep 300|sleep 500&
+  105  ls ./proc
+  106  ll ./proc
+  107  ll /proc 
+  108  pgrep sleep
+  109  ls /proc
+  110  ll /proc/1667/fd
+  111  ll /proc/1669/fd
+  112  kill 1667
+  113  kill 1669
+  114  cd work
+  115  cd '1 week'
+  116  vi 2-3.c
+  117  ls
+  118  gcc 2-3.c -o 2-3
+  119  vi 2-3.c
+  120  gcc 2-3.c -o 2-3
+  121  ./ 2-3
+  122  ./2-3
+  123  strace ./2-3
+  124  history
+  125  cd work
+  126  cd '1 week'
+  127  history>history.txt
+  128  ls
+  129  clear
+  130  cd work
+  131  cd 1wweek
+  132  cd 1week
+  133  ls
+  134  vi 2-3.c
+  135  gcc 2-3.c -o 2-3
+  136  ./2-3
+  137  strace ./2-3
+  138  history >history.txt
+  139  ls
+  140  clear
+  141  vi 2-4.c
+  142  ls
+  143  gcc 2-4.c -o 2-4
+  144  vi 2-4.c
+  145  gcc 2-4.c -o 2-4
+  146  ./2-4
+  147  vi 2-4
+  148  vi 2-4.c
+  149  ls
+  150  cat 2-4.data
+  151  history>history.txt
