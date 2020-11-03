@@ -111,7 +111,7 @@ void randdat()
 		isSrand = 1;
 	}
 	memset(u,0,sizeof(users));
-	//生成随机的id
+	
 	u->id = rand()%100; 
 	//生成首字母大写的Name
 	int len = rand() % 8;
@@ -121,8 +121,8 @@ void randdat()
 	{
 	 u->name[i] = 'a' + (rand() % 26);
 	}
-	u->name[0] += ('A' - 'a');//变为大写
-	//生成htel和tel,长度一样就一起生成
+	u->name[0] += ('A' - 'a');//大写
+	//生成htel和tel
 	for(i = 0; i < 11; i++)
 	{
 		u->htel[i] = rand() % 10 + '0';
@@ -143,12 +143,15 @@ void save(users user)
 	fprintf(fp,"%d\t%s\t%s\t%s\n",user.id,user.name,user.htel,user.tel);
 	fclose(fp);
 }
-int cmp(const void *a ,const void *b)
+int cmp1(const void *a ,const void *b)
 {
 	return strcmp((*(users*)a).name,(*(users*)b).name);
 }
-
-void mysort()
+int cmp2(const void *a ,const void *b)
+{
+	return -1*strcmp((*(users*)a).name,(*(users*)b).name);
+}
+void mysort(int tag)
 {
 	FILE *fp;
 	users *user_all;
@@ -166,9 +169,11 @@ void mysort()
 	fscanf(fp,"%d%s%s%s",&user_all[i].id,user_all[i].name,user_all[i].htel,user_all[i].tel);
 	
 	}//讀取數據存放在user_all數組中
-	
+	if(tag==1)
 
-	qsort(user_all,i,sizeof(users),cmp);
+	{qsort(user_all,i,sizeof(users),cmp1);}
+	if(tag==0)
+	{qsort(user_all,i,sizeof(users),cmp2);}
 	printf("\nid\tname\thtel\t\ttel\n");
 	for(int j=0;j<i;j++)
 	{printf("%d\t%s\t%s\t%s\n",user_all[j].id,user_all[j].name,user_all[j].htel,user_all[j].tel);}

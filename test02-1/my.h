@@ -13,5 +13,5 @@ void output();
 users input();
 void randdat();
 void save(users user);
-void mysort();
+void mysort(int tag);
 int check(users user);
